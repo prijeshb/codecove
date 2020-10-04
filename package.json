@@ -6,6 +6,11 @@
     "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "nyc": {
+  "branches": 80,
+  "lines": 3,
+  "functions": 80,
+  "statements": 80,
+  "check-coverage": true,
     "_comment": "Purpose of this part: to do code coverage within Mocha/Chai using Istanbul",
     "register": "babel-register",
     "include": [
